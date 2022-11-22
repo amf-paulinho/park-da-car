@@ -1,0 +1,97 @@
+<%= form_with(model: parking) do |form| %>
+  <% if parking.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(parking.errors.count, "error") %> prohibited this parking from being saved:</h2>
+
+      <ul>
+        <% parking.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :clientname, style: "display: block" %>
+    <%= form.text_field :clientname %>
+  </div>
+
+  <div>
+    <%= form.label :clientaddress, style: "display: block" %>
+    <%= form.text_field :clientaddress %>
+  </div>
+
+  <div>
+    <%= form.label :clientphone, style: "display: block" %>
+    <%= form.text_field :clientphone %>
+  </div>
+
+  <div>
+    <%= form.label :carvin, style: "display: block" %>
+    <%= form.text_field :carvin %>
+  </div>
+
+  <div>
+    <%= form.label :caryear, style: "display: block" %>
+    <%= form.text_field :caryear %>
+  </div>
+
+  <div>
+    <%= form.label :carmake, style: "display: block" %>
+    <%= form.text_field :carmake %>
+  </div>
+
+  <div>
+    <%= form.label :carmodel, style: "display: block" %>
+    <%= form.text_field :carmodel %>
+  </div>
+
+  <div>
+    <%= form.label :cartrim, style: "display: block" %>
+    <%= form.text_field :cartrim %>
+  </div>
+
+  <div>
+    <%= form.label :carplate, style: "display: block" %>
+    <%= form.text_field :carplate %>
+  </div>
+
+  <div>
+    <%= form.label :checkintime, style: "display: block" %>
+    <%= form.datetime_field :checkintime %>
+  </div>
+
+  <div>
+    <%= form.label :checkouttime, style: "display: block" %>
+    <%= form.datetime_field :checkouttime %>
+  </div>
+
+  <div>
+    <%= form.label :checkinatt, style: "display: block" %>
+    <%= form.text_field :checkinatt %>
+  </div>
+
+  <div>
+    <%= form.label :checkoutatt, style: "display: block" %>
+    <%= form.text_field :checkoutatt %>
+  </div>
+
+  <div>
+    <%= form.label :facilityspot, style: "display: block" %>
+    <%= form.text_field :facilityspot %>
+  </div>
+
+  <div>
+    <%= form.label :facilityname, style: "display: block" %>
+    <%= form.text_field :facilityname %>
+  </div>
+
+  <div>
+    <%= form.label :facilityaddress, style: "display: block" %>
+    <%= form.text_field :facilityaddress %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

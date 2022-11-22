@@ -1,0 +1,37 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  clientname: MyString
+  clientaddress: MyString
+  clientphone: MyString
+  carvin: MyString
+  caryear: MyString
+  carmake: MyString
+  carmodel: MyString
+  cartrim: MyString
+  carplate: MyString
+  checkintime: 2022-11-20 12:28:41
+  checkouttime: 2022-11-20 12:28:41
+  checkinatt: MyString
+  checkoutatt: MyString
+  facilityspot: MyString
+  facilityname: MyString
+  facilityaddress: MyString
+
+two:
+  clientname: MyString
+  clientaddress: MyString
+  clientphone: MyString
+  carvin: MyString
+  caryear: MyString
+  carmake: MyString
+  carmodel: MyString
+  cartrim: MyString
+  carplate: MyString
+  checkintime: 2022-11-20 12:28:41
+  checkouttime: 2022-11-20 12:28:41
+  checkinatt: MyString
+  checkoutatt: MyString
+  facilityspot: MyString
+  facilityname: MyString
+  facilityaddress: MyString
